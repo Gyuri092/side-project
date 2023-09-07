@@ -16,7 +16,8 @@ module.exports = {
     'plugin:prettier/recommended',
   ],
   rules: {
-    'prettier/prettier': 0,
+    'linebreak-style': ['error', require('os').EOL === '\r\n' ? 'windows' : 'unix'],
+    'prettier/prettier': [ error, {  endOfLine: 'auto' } ],
   },
   settings: {
     'import/resolver': {
