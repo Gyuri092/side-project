@@ -5,7 +5,7 @@ module.exports = {
     tsconfigRootDir: __dirname,
   },
   plugins: ['@typescript-eslint', 'react-hooks'],
-  ignorePatterns: ['node_modules/', 'dist/'],
+  ignorePatterns: ['node_modules/', 'dist/', 'build/'],
   extends: [
     'airbnb', // or airbnb-base
     'plugin:react/recommended',
